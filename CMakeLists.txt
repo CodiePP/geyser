@@ -18,7 +18,7 @@ add_definitions( -DLinux )
 #add_definitions( -DFreeBSD )
 #add_definitions( -DWindows )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 
 # boost
 #set(BOOST_ROOT "/usr/local/boost_1_57_0")

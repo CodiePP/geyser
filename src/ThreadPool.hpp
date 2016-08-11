@@ -13,7 +13,6 @@
 #include <boost/thread.hpp>
 #include <boost/asio.hpp>
 
-#include <string>
 #include <memory>
 
 namespace geyser
@@ -34,7 +33,6 @@ private:
     boost::asio::io_service _service;
     std::unique_ptr<boost::asio::io_service::work> _working;
     boost::thread_group _threads;
-    unsigned long njobs { 0UL };
 
 public:
     template<class F>
